@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=delete"
+    />
+    <title>Document</title>
+  </head>
+  <body class="w-full mx-20 mt-10 overflow-x-hidden">
+    <h1 class="text-zinck-800 font-bold text-2xl">Task Traker</h1>
+    <p>number on tasks <span id="numberOfTak"></span></p>
+
+    <!-- search bar -->
+    <div class="w-[70%] overflow-x-hidden">
+      <input
+        id="taskInput"
+        type="text"
+        class="border focus:border-black p-2 w-[94%] rounded bg-gray-100/80"
+        placeholder="Add a Tas..."
+      />
+      <!-- add btn -->
+      <button
+        type="submit"
+        id="addTaskBtn"
+        class="px-3 py-2 bg-gray-800 text-white rounded"
+      >
+        +
+      </button>
+
+      <!-- task list -->
+      <ul id="taskList" class="list-none p-0 m-0 gap-y-1 w-full"></ul>
+    </div>
+
+    <!-- js -->
+    <script src="./main.js"></script>
+  </body>
+</html>
